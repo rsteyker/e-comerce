@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail-container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li{
+    list-style: none;
+}
+
+@media (max-width: 768px){
+    .navbar,
+    .home{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
